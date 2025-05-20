@@ -1,4 +1,4 @@
-const g = global || window || self || {};
+const g = global || window || self || { Object };
 
 function respondsToSelector(
   object: Object,
