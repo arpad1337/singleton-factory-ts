@@ -1,3 +1,5 @@
+const g = global || window || self || {};
+
 function respondsToSelector(
   object: Object,
   selector: string | symbol | number
@@ -8,13 +10,13 @@ function respondsToSelector(
   );
 }
 
-Object.defineProperty(global.Object, "respondsToSelector", {
+Object.defineProperty(g.Object, "respondsToSelector", {
   enumerable: false,
   writable: false,
   value: respondsToSelector,
 });
 
-Object.defineProperty(global.Object.prototype, "respondsToSelector", {
+Object.defineProperty(g.Object.prototype, "respondsToSelector", {
   enumerable: false,
   writable: false,
   value: function (selector: string | symbol | number): boolean {
