@@ -2,7 +2,7 @@
 
 Singleton base class and Factory for Dependency Injection
 
-# Usage
+## Usage
 
 ```typescript
 
@@ -28,10 +28,10 @@ Singleton base class and Factory for Dependency Injection
 
 ```
 
-# Author
+## Author
 
 @arpad1337
 
-# License
+## License
 
 MIT
